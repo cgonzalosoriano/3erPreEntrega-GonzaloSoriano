@@ -1,0 +1,174 @@
+.bodystore{
+    overflow: auto;
+.storemain{
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 150px auto;
+    grid-template-areas: 
+        "banner banner banner banner"
+        "navegacion products products cart";
+    #storebanner{
+    grid-area: banner;
+    background-size: cover;
+    background-position: center;
+    h3{color: white;
+    padding-top: 25px;
+    font-size: 50px;
+    text-align: center;}}
+    .barra-filtrado{
+        grid-area: navegacion;
+        padding: 10px;
+        box-sizing: border-box;
+        top: 0;
+        .filtro {
+        margin-bottom: 20px;}
+        h3 {
+        margin: 0;
+        padding: 10px 10px 0 10px;
+        text-align: left;}
+        div {
+        margin-bottom: 5px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 10px;}
+        label {
+        margin-left: 5px;}}
+    .storesectionproduct{
+        grid-area: products;
+        padding: 40px;
+        .productosstore{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 5px;}
+        .productostore{
+        width: 25%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 20px;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        padding: 10px;
+        img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+        &:hover{
+        transform: scale(1.1);}}
+        h3 {
+        color: #333;
+        margin: 15px 0 0 0;
+        font-size: 15px;
+        text-align: center;}
+        p {
+        margin: 10px;
+        color: #666;
+        text-align: center;}
+        a{
+        margin: 10px;
+        border: 1px solid black;
+        border-radius: 12px;
+        text-decoration: none;
+        padding: 7px;
+        &:hover{transform: scale(1.1);
+        background-color: transparent; 
+        color: black;}
+        }}}
+        
+
+    .storecard{
+            grid-area: cart;
+            margin-top: 40px;
+            .carrito {
+            padding-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;}
+            .productocarrito {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            img {
+            width: 40%; 
+            height: auto;
+            margin: 0;}
+            p{
+            margin: 0;
+            text-align: center ;
+            font-size: 10px;}
+            a{
+            margin: 10px;
+            border: 1px solid black;
+            border-radius: 12px;
+            text-decoration: none;
+            padding: 7px;
+            &:hover{transform: scale(1.1);
+            background-color: transparent; 
+            color: black;} 
+            }}}
+            
+        
+        
+        }}
+@media (max-width: 320px){
+    .storemain{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px auto auto;
+        grid-template-areas: 
+            "banner"
+            "nav"
+            "products";
+    
+    }
+    .storebanner{
+        padding-top: 45px;
+        font-size: 30px;
+        text-align: center;
+
+    }
+    
+    .barra-filtrado{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    
+    }
+    
+    .filtro h3 {
+        font-size: 10px;
+    }
+    
+    .filtro div {
+        margin-bottom: 5px;
+    }
+    
+    .filtro label {
+        margin-left: 5px;
+        font-size: 9px;
+    }
+    
+    .storesectionproduct{
+        padding-top: 10px;
+    }
+        
+    .productostore h3 {
+        font-size: 15px;
+    }
+    
+    .productostore p {
+        font-size: 10px;
+    }
+    .storecard{
+        display: none;
+    }
+
+}

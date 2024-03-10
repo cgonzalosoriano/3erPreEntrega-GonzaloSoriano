@@ -1,5 +1,23 @@
+@import "./general/variables";
+@import "./general/resert";
+@import "./general/header";
+@import "./general/footer";
+
+@import "./pages/index";
+#banner{background-image: url(../media/banner.png);}
+
+@import "./pages/blog";
+#blogbanner{background-image: url(../media/banner-blog.png);}
+
+@import "./pages/features";
+
+@import "./pages/about-us";
+
+@import "./pages/comany-politics";
+
+@import "./pages/cart";
+
+@import "./pages/store";
+#storebanner{background-image: url(../media/banner3.png);}
 
 
-@import "../scss/general/resert.scss"
-
-@import "../scss/general/header.scss"
