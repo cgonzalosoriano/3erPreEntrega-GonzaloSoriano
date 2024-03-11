@@ -37,4 +37,32 @@ header{
     .nav-item img{
         height: 20px;
         vertical-align: middle;}
+
+        @media (max-width: 430px) {
+            .navbar{
+                height: 120px;
+            .navbar-nav {
+                padding-left: 20px;
+                padding-right: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                height: 120px;}
+            .menu-items, .Logo, .nav-item {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding-top: 7px;}
+            .nav-item {
+                margin-right: 0;
+                margin-top: 0;}
+            .nav-logo img, .nav-item img {
+                height: 30px;}
+            .nav-item a {
+                padding: 0 15px;
+                font-size: 11px;
+                text-align: center;
+                align-self: center;}
+            .nav-icons{
+                display: none;}
+        }}
 }

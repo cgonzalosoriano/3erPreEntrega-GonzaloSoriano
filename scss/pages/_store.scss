@@ -7,35 +7,66 @@
     grid-template-areas: 
         "banner banner banner banner"
         "navegacion products products cart";
+    @media (max-width:430px) {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 150px auto;
+        grid-template-areas: 
+            "banner banner"
+            "navegacion products";}
     #storebanner{
     grid-area: banner;
     background-size: cover;
     background-position: center;
-    h3{color: white;
+    @media (max-width: 430px) {
+    margin: 0;
+    }
+    h1{color: white;
     padding-top: 25px;
     font-size: 50px;
-    text-align: center;}}
+    text-align: center;
+    align-items: center;
+    @media (max-width:430px){
+    margin:0;
+    padding: 45px 0 0 0;
+    font-size: 30px;}
+
+}}
     .barra-filtrado{
         grid-area: navegacion;
         padding: 10px;
         box-sizing: border-box;
         top: 0;
+        @media (max-width:430px) {
+        position: fixed;
+        margin-top: 250px;
+        }
         .filtro {
         margin-bottom: 20px;}
         h3 {
         margin: 0;
         padding: 10px 10px 0 10px;
-        text-align: left;}
+        text-align: left;
+        @media (max-width:430px) {
+        font-size: 15px;
+        }}
         div {
         margin-bottom: 5px;
         margin-left: 0;
         margin-right: 0;
         padding-left: 10px;}
         label {
-        margin-left: 5px;}}
-    .storesectionproduct{
+        margin-left: 5px;
+        @media (max-width:430px) {
+        font-size: 12px;
+        }}}
+    
+        .storesectionproduct{
         grid-area: products;
         padding: 40px;
+        @media (max-width:430px){
+        padding: 0;
+        }
         .productosstore{
         display: flex;
         flex-direction: row;
@@ -78,6 +109,10 @@
         &:hover{transform: scale(1.1);
         background-color: transparent; 
         color: black;}
+        }
+        @media (max-width:430px) {
+        margin:0;
+        width: 70%;
         }}}
         
 
@@ -111,64 +146,9 @@
             &:hover{transform: scale(1.1);
             background-color: transparent; 
             color: black;} 
-            }}}
-            
-        
-        
+            }}
+        @media (max-width:430px) {
+            display: none;
         }}
-@media (max-width: 320px){
-    .storemain{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px auto auto;
-        grid-template-areas: 
-            "banner"
-            "nav"
-            "products";
-    
-    }
-    .storebanner{
-        padding-top: 45px;
-        font-size: 30px;
-        text-align: center;
 
-    }
-    
-    .barra-filtrado{
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-    
-    }
-    
-    .filtro h3 {
-        font-size: 10px;
-    }
-    
-    .filtro div {
-        margin-bottom: 5px;
-    }
-    
-    .filtro label {
-        margin-left: 5px;
-        font-size: 9px;
-    }
-    
-    .storesectionproduct{
-        padding-top: 10px;
-    }
-        
-    .productostore h3 {
-        font-size: 15px;
-    }
-    
-    .productostore p {
-        font-size: 10px;
-    }
-    .storecard{
-        display: none;
-    }
-
-}
+        }}

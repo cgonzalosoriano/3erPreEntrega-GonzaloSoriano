@@ -50,6 +50,40 @@ header .nav-item img {
   height: 20px;
   vertical-align: middle;
 }
+@media (max-width: 430px) {
+  header .navbar {
+    height: 120px;
+  }
+  header .navbar .navbar-nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 120px;
+  }
+  header .navbar .menu-items, header .navbar .Logo, header .navbar .nav-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 7px;
+  }
+  header .navbar .nav-item {
+    margin-right: 0;
+    margin-top: 0;
+  }
+  header .navbar .nav-logo img, header .navbar .nav-item img {
+    height: 30px;
+  }
+  header .navbar .nav-item a {
+    padding: 0 15px;
+    font-size: 11px;
+    text-align: center;
+    align-self: center;
+  }
+  header .navbar .nav-icons {
+    display: none;
+  }
+}
 
 footer {
   background-color: lightgray;
@@ -108,6 +142,17 @@ main #banner .boton-tienda:hover {
   background-color: transparent;
   color: white;
 }
+@media (max-width: 430px) {
+  main #banner #banner {
+    height: 300px;
+  }
+  main #banner #banner h1 {
+    font-size: 2.5em;
+  }
+  main #banner .boton-tienda {
+    font-size: 1em;
+  }
+}
 main #tituloDestacados {
   font-size: 30;
   margin-top: 55px;
@@ -119,10 +164,20 @@ main #subtituloDestacados {
   margin-bottom: 35px;
   text-align: center;
 }
+@media (max-width: 430px) {
+  main #subtituloDestacados {
+    margin: 0;
+  }
+}
 main .productos-destacados {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
+}
+@media (max-width: 430px) {
+  main .productos-destacados {
+    flex-wrap: wrap;
+  }
 }
 main .producto {
   width: 20%;
@@ -131,6 +186,13 @@ main .producto {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   overflow: hidden;
+}
+@media (max-width: 430px) {
+  main .producto {
+    margin: 5px;
+    padding: 10px;
+    width: 40%;
+  }
 }
 main .producto img {
   width: 100%;
@@ -141,14 +203,31 @@ main .producto img {
 main .producto img:hover {
   transform: scale(1.1);
 }
+@media (max-width: 430px) {
+  main .producto img {
+    width: 100%;
+  }
+}
 main .producto h3 {
   margin: 20px 0 0 0;
   color: #333;
   padding: 0px;
 }
+@media (max-width: 430px) {
+  main .producto h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+}
 main .producto p {
   margin: 0;
   color: #666;
+}
+@media (max-width: 430px) {
+  main .producto p {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 main .producto .boton-comprar {
   padding: 10px 20px;
@@ -166,6 +245,12 @@ main .producto .boton-comprar:hover {
   transform: scale(1.1);
   background-color: transparent;
   color: black;
+}
+@media (max-width: 430px) {
+  main .producto .boton-comprar {
+    padding: 5px;
+    font-size: 15px;
+  }
 }
 
 #banner {
@@ -192,6 +277,11 @@ main .producto .boton-comprar:hover {
   color: white;
   font-size: 60;
 }
+@media (max-width: 430px) {
+  .tituloBlog {
+    font-size: 40px;
+  }
+}
 
 .mainBlog {
   margin-left: 250px;
@@ -199,17 +289,37 @@ main .producto .boton-comprar:hover {
   text-align: justify;
   margin-bottom: 100px;
 }
+@media (max-width: 430px) {
+  .mainBlog {
+    margin: 0;
+  }
+}
 .mainBlog h3 {
   margin-top: 15px;
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 430px) {
+  .mainBlog h3 {
+    margin: 0;
+  }
+}
 .mainBlog h4 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+@media (max-width: 430px) {
+  .mainBlog h4 {
+    padding: 10px;
+  }
+}
 .mainBlog p {
   margin: 0;
+}
+@media (max-width: 430px) {
+  .mainBlog p {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -256,6 +366,11 @@ main .producto .boton-comprar:hover {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+@media (max-width: 430px) {
+  .section1 {
+    margin: 0;
+  }
+}
 
 .tituloSection1 {
   margin-top: 50px;
@@ -263,12 +378,24 @@ main .producto .boton-comprar:hover {
   text-align: center;
   font-size: 60;
 }
+@media (max-width: 430px) {
+  .tituloSection1 {
+    font-size: 20px;
+    margin: 25px 0 0 0;
+  }
+}
 
 .seccion-productos {
   display: flex;
   justify-content: center;
   gap: 100px;
   position: relative;
+}
+@media (max-width: 430px) {
+  .seccion-productos {
+    margin: 40px 0 0 0;
+    gap: 0;
+  }
 }
 
 .producto {
@@ -319,33 +446,15 @@ main .producto .boton-comprar:hover {
   color: white;
 }
 
-@media (max-width: 320px) {
-  .section1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0px;
-  }
-  .tituloSection1 {
-    font-size: 30px;
-  }
-  .seccion-productos {
-    gap: 20px;
-  }
-  .producto img {
-    max-width: 150%;
-  }
-  .producto .precio {
-    font-size: 12px;
-  }
-  .producto button {
-    font-size: 7px;
-  }
-}
 .tituloSection2 {
   margin-top: 50px;
   text-align: center;
   font-size: 60;
+}
+@media (max-width: 430px) {
+  .tituloSection2 {
+    font-size: 20px;
+  }
 }
 
 .seccion-productos-linea {
@@ -353,6 +462,13 @@ main .producto .boton-comprar:hover {
   justify-content: space-around;
   gap: 20px;
   margin: 50px;
+}
+@media (max-width: 430px) {
+  .seccion-productos-linea {
+    flex-wrap: wrap;
+    margin: 0;
+    width: auto;
+  }
 }
 
 .producto-linea {
@@ -375,14 +491,30 @@ main .producto .boton-comprar:hover {
   margin-left: 0px;
   text-align: center;
 }
+@media (max-width: 430px) {
+  .producto-linea h3 {
+    margin: 0;
+  }
+}
 .producto-linea p {
   color: #666;
   margin-left: 0;
+}
+@media (max-width: 430px) {
+  .producto-linea p {
+    margin: 0;
+    font-size: 10px;
+  }
 }
 .producto-linea .precio {
   font-weight: bold;
   color: #333;
   margin: 10px 0;
+}
+@media (max-width: 430px) {
+  .producto-linea .precio {
+    font-size: 11px;
+  }
 }
 
 .producto-linea button {
@@ -398,41 +530,21 @@ main .producto .boton-comprar:hover {
   background-color: purple;
   color: white;
 }
-
-@media (max-width: 320px) {
-  .tituloSection2 {
-    font-size: 30px;
-  }
-  .seccion-productos-linea {
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    margin: 0;
-    margin-top: 20px;
-  }
-  .producto-linea h3 {
-    font-size: 12px;
-  }
-  .producto-linea p {
-    font-size: 10px;
-  }
-  .producto-linea .precio {
-    font-size: 10px;
-  }
+@media (max-width: 430px) {
   .producto-linea button {
-    padding: 2;
-    margin-top: 0%;
-    font-size: 7px;
-  }
-  .producto-linea button:hover {
-    background-color: purple;
-    color: white;
+    font-size: 11px;
   }
 }
+
 main h1 {
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
+}
+@media (max-width: 430px) {
+  main h1 {
+    margin: 50px 0 0 0;
+  }
 }
 main h2 {
   text-align: center;
@@ -445,10 +557,23 @@ main h3 {
   margin-bottom: 25px;
   text-align: justify;
 }
+@media (max-width: 430px) {
+  main h3 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+  }
+}
 main p {
   margin-left: 250px;
   margin-right: 200px;
   text-align: justify;
+}
+@media (max-width: 430px) {
+  main p {
+    margin: 0;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -535,22 +660,45 @@ button:hover {
   margin-bottom: 50px;
   text-align: center;
 }
+@media (max-width: 430px) {
+  #section-politicas h1 {
+    margin: 50px 0 0 0;
+  }
+}
 #section-politicas h3 {
   margin-left: 250px;
   margin-right: 200px;
   margin-top: 60px;
   margin-bottom: 10px;
 }
+@media (max-width: 430px) {
+  #section-politicas h3 {
+    margin: 0;
+    padding: 15px;
+  }
+}
 #section-politicas h5 {
   margin-left: 250px;
   margin-right: 200px;
   font-size: 15;
+}
+@media (max-width: 430px) {
+  #section-politicas h5 {
+    margin: 0;
+    padding: 15px;
+  }
 }
 #section-politicas p {
   margin-left: 250px;
   margin-right: 200px;
   margin-bottom: 10px;
   text-align: justify;
+}
+@media (max-width: 430px) {
+  #section-politicas p {
+    margin: 0;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -581,6 +729,11 @@ button:hover {
 }
 .maincart h2 {
   margin-top: 20px;
+}
+@media (max-width: 430px) {
+  .maincart h2 {
+    margin: 50px 0 0 0;
+  }
 }
 .maincart section {
   margin: 40px;
@@ -622,22 +775,49 @@ button:hover {
   grid-template-rows: 150px auto;
   grid-template-areas: "banner banner banner banner" "navegacion products products cart";
 }
+@media (max-width: 430px) {
+  .bodystore .storemain {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 150px auto;
+    grid-template-areas: "banner banner" "navegacion products";
+  }
+}
 .bodystore .storemain #storebanner {
   grid-area: banner;
   background-size: cover;
   background-position: center;
 }
-.bodystore .storemain #storebanner h3 {
+@media (max-width: 430px) {
+  .bodystore .storemain #storebanner {
+    margin: 0;
+  }
+}
+.bodystore .storemain #storebanner h1 {
   color: white;
   padding-top: 25px;
   font-size: 50px;
   text-align: center;
+  align-items: center;
+}
+@media (max-width: 430px) {
+  .bodystore .storemain #storebanner h1 {
+    margin: 0;
+    padding: 45px 0 0 0;
+    font-size: 30px;
+  }
 }
 .bodystore .storemain .barra-filtrado {
   grid-area: navegacion;
   padding: 10px;
   box-sizing: border-box;
   top: 0;
+}
+@media (max-width: 430px) {
+  .bodystore .storemain .barra-filtrado {
+    position: fixed;
+    margin-top: 250px;
+  }
 }
 .bodystore .storemain .barra-filtrado .filtro {
   margin-bottom: 20px;
@@ -646,6 +826,11 @@ button:hover {
   margin: 0;
   padding: 10px 10px 0 10px;
   text-align: left;
+}
+@media (max-width: 430px) {
+  .bodystore .storemain .barra-filtrado h3 {
+    font-size: 15px;
+  }
 }
 .bodystore .storemain .barra-filtrado div {
   margin-bottom: 5px;
@@ -656,9 +841,19 @@ button:hover {
 .bodystore .storemain .barra-filtrado label {
   margin-left: 5px;
 }
+@media (max-width: 430px) {
+  .bodystore .storemain .barra-filtrado label {
+    font-size: 12px;
+  }
+}
 .bodystore .storemain .storesectionproduct {
   grid-area: products;
   padding: 40px;
+}
+@media (max-width: 430px) {
+  .bodystore .storemain .storesectionproduct {
+    padding: 0;
+  }
 }
 .bodystore .storemain .storesectionproduct .productosstore {
   display: flex;
@@ -711,6 +906,12 @@ button:hover {
   background-color: transparent;
   color: black;
 }
+@media (max-width: 430px) {
+  .bodystore .storemain .storesectionproduct .productostore {
+    margin: 0;
+    width: 70%;
+  }
+}
 .bodystore .storemain .storecard {
   grid-area: cart;
   margin-top: 40px;
@@ -749,48 +950,12 @@ button:hover {
   background-color: transparent;
   color: black;
 }
-
-@media (max-width: 320px) {
-  .storemain {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px auto auto;
-    grid-template-areas: "banner" "nav" "products";
-  }
-  .storebanner {
-    padding-top: 45px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .barra-filtrado {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .filtro h3 {
-    font-size: 10px;
-  }
-  .filtro div {
-    margin-bottom: 5px;
-  }
-  .filtro label {
-    margin-left: 5px;
-    font-size: 9px;
-  }
-  .storesectionproduct {
-    padding-top: 10px;
-  }
-  .productostore h3 {
-    font-size: 15px;
-  }
-  .productostore p {
-    font-size: 10px;
-  }
-  .storecard {
+@media (max-width: 430px) {
+  .bodystore .storemain .storecard {
     display: none;
   }
 }
+
 #storebanner {
   background-image: url(../media/banner3.png);
 }
