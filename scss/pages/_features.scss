@@ -55,15 +55,17 @@
     width: 40%;}}
 .producto button {
     background-color: transparent;
-    color: black;
-    border: 1.5px solid black;
-    border-radius: 12px;
+    color: $border-color;
+    border: 1.5px solid $border-color;
+    border-radius: $button-radius;
     padding: 10px 20px;
     margin-top: 20px;
+    transition: transform 0.3s ease;
     @media (max-width: 430px) {
     padding: 10px;}
     &:hover {
-    background-color: purple;
+    transform: scale(1.2);
+    background: $gradiente-button;
     color: white;}}
 
 .tituloSection2{
@@ -97,8 +99,11 @@
     height: auto;
     border-radius: 5px;}
     h3 {
+    display: flex;
     margin-top: 10px;
     margin-left: 0px;
+    margin-right: 0;
+    justify-content: center;
     text-align: center;
     @media (max-width:430px){
     margin: 0;
@@ -108,6 +113,7 @@
     p {
     color: #666;
     margin-left:0;
+    margin-right: 0;
     @media (max-width:430px){
     margin: 0;
     padding: 5px;
@@ -122,14 +128,15 @@
     }}}
 .producto-linea button {
     background-color: transparent;
-    color: black;
-    border: 1.5px solid black;
+    color: $border-color;
+    border: 1.5px solid $border-color;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: $button-radius;
     cursor: pointer;
     margin-top: 10px;
+    transition: transform 0.3s ease;
     &:hover {
-    background-color: purple;
+    background: $gradiente-button;
     color: white;}
     @media (max-width:430px){
     font-size: 11px;

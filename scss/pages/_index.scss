@@ -89,18 +89,19 @@ main{
         .boton-comprar {
         padding: 10px 20px;
         background-color: transparent;
-        color: black;
+        color: $border-color;
+        font-weight: bold;
         text-decoration: none;
-        border-radius: 10px;
-        border: 1.5px solid black;
+        border-radius: $button-radius;
+        border: 1.5px solid $border-color;
         display: inline-block;
         font-size: 1em;
         margin-top: 15px;
         transition: transform 0.3s ease;
         &:hover{
-        transform: scale(1.1);
-        background-color: transparent; 
-        color: black;}
+        transform: scale(1.2);
+        background: $gradiente-button;
+        color: white;}
         @media (max-width: 430px) {
         padding: 5px;
         font-size: 15px;

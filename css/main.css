@@ -233,19 +233,20 @@ main .producto p {
 main .producto .boton-comprar {
   padding: 10px 20px;
   background-color: transparent;
-  color: black;
+  color: #9575CD;
+  font-weight: bold;
   text-decoration: none;
-  border-radius: 10px;
-  border: 1.5px solid black;
+  border-radius: 15px;
+  border: 1.5px solid #9575CD;
   display: inline-block;
   font-size: 1em;
   margin-top: 15px;
   transition: transform 0.3s ease;
 }
 main .producto .boton-comprar:hover {
-  transform: scale(1.1);
-  background-color: transparent;
-  color: black;
+  transform: scale(1.2);
+  background: linear-gradient(45deg, #9575CD, #512DA8);
+  color: white;
 }
 @media (max-width: 430px) {
   main .producto .boton-comprar {
@@ -435,11 +436,12 @@ main .producto .boton-comprar:hover {
 
 .producto button {
   background-color: transparent;
-  color: black;
-  border: 1.5px solid black;
-  border-radius: 12px;
+  color: #9575CD;
+  border: 1.5px solid #9575CD;
+  border-radius: 15px;
   padding: 10px 20px;
   margin-top: 20px;
+  transition: transform 0.3s ease;
 }
 @media (max-width: 430px) {
   .producto button {
@@ -447,7 +449,8 @@ main .producto .boton-comprar:hover {
   }
 }
 .producto button:hover {
-  background-color: purple;
+  transform: scale(1.2);
+  background: linear-gradient(45deg, #9575CD, #512DA8);
   color: white;
 }
 
@@ -496,8 +499,11 @@ main .producto .boton-comprar:hover {
   border-radius: 5px;
 }
 .producto-linea h3 {
+  display: flex;
   margin-top: 10px;
   margin-left: 0px;
+  margin-right: 0;
+  justify-content: center;
   text-align: center;
 }
 @media (max-width: 430px) {
@@ -510,6 +516,7 @@ main .producto .boton-comprar:hover {
 .producto-linea p {
   color: #666;
   margin-left: 0;
+  margin-right: 0;
 }
 @media (max-width: 430px) {
   .producto-linea p {
@@ -531,15 +538,16 @@ main .producto .boton-comprar:hover {
 
 .producto-linea button {
   background-color: transparent;
-  color: black;
-  border: 1.5px solid black;
+  color: #9575CD;
+  border: 1.5px solid #9575CD;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   margin-top: 10px;
+  transition: transform 0.3s ease;
 }
 .producto-linea button:hover {
-  background-color: purple;
+  background: linear-gradient(45deg, #9575CD, #512DA8);
   color: white;
 }
 @media (max-width: 430px) {
@@ -774,8 +782,14 @@ button:hover {
 }
 .maincart .divbutton {
   display: flex;
+  margin: 0 0 30px 0;
   justify-content: center;
-  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+.maincart .divbutton:hover {
+  transform: scale(1.1);
+  background-color: linear-gradient(45deg, #9575CD, #512DA8);
+  color: white;
 }
 
 .bodystore {
@@ -911,16 +925,20 @@ button:hover {
   text-align: center;
 }
 .bodystore .storemain .storesectionproduct .productostore a {
-  margin: 10px;
-  border: 1px solid black;
-  border-radius: 12px;
+  text-align: center;
+  color: #9575CD;
+  width: 40%;
+  margin: 10px 10px 10px 61px;
+  border: 1px solid #9575CD;
+  border-radius: 15px;
   text-decoration: none;
   padding: 7px;
+  transition: transform 0.3s ease;
 }
 .bodystore .storemain .storesectionproduct .productostore a:hover {
   transform: scale(1.1);
-  background-color: transparent;
-  color: black;
+  background: linear-gradient(45deg, #9575CD, #512DA8);
+  color: white;
 }
 @media (max-width: 430px) {
   .bodystore .storemain .storesectionproduct .productostore {
@@ -958,15 +976,17 @@ button:hover {
 }
 .bodystore .storemain .storecard .productocarrito a {
   margin: 10px;
-  border: 1px solid black;
-  border-radius: 12px;
+  color: #9575CD;
+  border: 1px solid #9575CD;
+  border-radius: 15px;
   text-decoration: none;
   padding: 7px;
+  transition: transform 0.3s ease;
 }
 .bodystore .storemain .storecard .productocarrito a:hover {
   transform: scale(1.1);
-  background-color: transparent;
-  color: black;
+  background: linear-gradient(45deg, #9575CD, #512DA8);
+  color: white;
 }
 @media (max-width: 430px) {
   .bodystore .storemain .storecard {
